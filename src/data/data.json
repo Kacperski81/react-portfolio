@@ -1,0 +1,44 @@
+[
+    {
+        "id": "password-generator",
+        "title": "Password generator",
+        "linkToDeployed": "https://kacperski81.github.io/Password-Generator/",
+        "linkToGitHub": "https://github.com/Kacperski81/Password-Generator",
+        "image": "../images/passwordGenerator.png"
+    },
+    {
+        "id": "code-quiz",
+        "title": "Code Quiz",
+        "linkToDeployed": "https://kacperski81.github.io/Code-Quiz/",
+        "linkToGitHub": "https://github.com/Kacperski81/Code-Quiz",
+        "image": "../images/code-quiz.png"
+    },
+    {
+        "id": "calendar-application",
+        "title": "Calendar Application",
+        "linkToDeployed": "https://kacperski81.github.io/Calendar-Application/",
+        "linkToGitHub": "https://github.com/Kacperski81/Calendar-Application",
+        "image": "../images/calendar-app.png"
+    },
+    {
+        "id": "weather-dashboard",
+        "title": "Weather Dashboard",
+        "linkToDeployed": "https://kacperski81.github.io/Weather-Dashboard/",
+        "linkToGitHub": "https://github.com/Kacperski81/Weather-Dashboard",
+        "image": "../images/weather-dashboard.png"
+    },
+    {
+        "id": "dumm1",
+        "title": "Dummy Title 1",
+        "linkToDeployed": "Dummy link to deployed 1",
+        "linkToGitHub": "Dummy link to GitHub 1",
+        "image": ""
+    },
+    {
+        "id": "dummy2",
+        "title": "Dummy Title 2",
+        "linkToDeployed": "Dummy link to deployed 2",
+        "linkToGitHub": "Dummy link to GitHub 2",
+        "image": ""
+    }
+]

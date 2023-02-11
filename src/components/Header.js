@@ -1,5 +1,6 @@
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import { Link } from "react-router-dom";
 
 const sytles = {
     background: {
@@ -17,13 +18,13 @@ function Header() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav variant="pills">
                         <Nav.Item>
-                            <Nav.Link>Home</Nav.Link>
+                            <Link to="/">Home</Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link>Projects</Nav.Link>
+                            <Link to="/projects">Projects</Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link>Contact</Nav.Link>
+                            <Link to="/contact">Contact</Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>

@@ -1,6 +1,13 @@
-function Project() {
+import { getProject } from "../data/data";
+
+
+function Project({image}) {
+    const project = getProject(1);
     return (
-        <h1>This is Project Component</h1>
+        <>
+            <h1>{project.title}</h1>
+            <img src={image} />
+        </>
     )
 }
 
