@@ -2,20 +2,19 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 
-const sytles = {
-    background: {
-        backgroundColor: 'green'
+const styles = {
+    toggle: {
+        marginTop: "1rem",
     }
-
 }
 
 function Header() {
     return (
-        <>
-            <Navbar collapseOnSelect sticky="top" expand="md" style={sytles.background}>
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <header>
+            <Navbar collapseOnSelect sticky="top" expand="md">
+                <Navbar.Brand className="brand"><Link to="/">&lt;devKacper /&gt;</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Collapse style={styles.toggle} id="responsive-navbar-nav">
                     <Nav variant="pills">
                         <Nav.Item>
                             <Link to="/">Home</Link>
@@ -29,7 +28,7 @@ function Header() {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-        </>
+        </header>
     )
 }
 

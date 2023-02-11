@@ -1,6 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1280px;
+    font-size: 1rem;
+    background: "#ffffff";
+}
+
+:root {
+    --clr-background: #fff;
+    --clr-light: #f0f3bd;
+    /* --clr-light: #d8c99b;   */
+    --clr-dark: #273e47;
+    --clr-accent: #02c39a;
+    --clr-font: #000;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+    0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
 
 img {
-    max-width: 300px;
+    max-width: 100%;
     object-fit: cover;
 }
+
+header {
+    background-color: var(--clr-light);
+}
+
+.brand {
+    background-color: var(--clr-dark);
+    color: var(--clr-light) !important;
+    padding: .4rem 1.2rem;
+    box-shadow: var(--bs);
+    text-decoration: none;
+}
+
+a {
+    color: var(--clr-dark);
+    cursor: pointer;
+}
+
+.brand a {
+    color: var(--clr-lignt) !important;
+    text-decoration: none;
+}
+
+.projectCard {
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+}
+
+footer p {
+    margin-bottom: 0;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    text-align: center;
+    padding: .8rem;
+  }
 

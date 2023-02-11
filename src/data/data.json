@@ -1,7 +1,7 @@
 [
     {
         "id": "password-generator",
-        "title": "Password generator",
+        "title": "Password Generator",
         "linkToDeployed": "https://kacperski81.github.io/Password-Generator/",
         "linkToGitHub": "https://github.com/Kacperski81/Password-Generator",
         "image": "../images/passwordGenerator.png"

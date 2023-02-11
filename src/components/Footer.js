@@ -1,6 +1,8 @@
 function Footer() {
     return (
-        <h1>This is Footer Component</h1>
+        <footer>
+            <p>&copy;Marcin Kacperski</p>
+        </footer>
     )
 }
 
