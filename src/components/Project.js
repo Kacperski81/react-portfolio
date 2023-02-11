@@ -1,11 +1,12 @@
 
-
-
-function Project() {
-
+function Project(props) {
+    
     return (
         <>
-            <h1>Project</h1>
+            <h3>Project title: {props.projectData.title}</h3>
+            <p>url: {props.projectData.linkToDeployed}</p>
+            <p>git: {props.projectData.linkToGitHub}</p>
+            <img src={props.projectData.image} />
         </>
     )
 }

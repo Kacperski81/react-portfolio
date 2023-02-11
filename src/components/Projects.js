@@ -1,10 +1,13 @@
+import projectData from "../data/data"
 import Project from "./Project";
 
 
 function Projects() {
     return (
         <>
-            <h1>This is Projects component</h1>          
+            {projectData.map(project => (
+                <Project key={project.id} projectData={project}/>
+            ))}          
         </>
     )
 }
