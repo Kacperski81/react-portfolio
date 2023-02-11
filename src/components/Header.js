@@ -10,8 +10,8 @@ const styles = {
 
 function Header() {
     return (
-        <header>
-            <Navbar collapseOnSelect sticky="top" expand="md">
+        <>
+            <Navbar collapseOnSelect sticky="top" expand="md" className="header">
                 <Navbar.Brand className="brand"><Link to="/">&lt;devKacper /&gt;</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse style={styles.toggle} id="responsive-navbar-nav">
@@ -28,7 +28,7 @@ function Header() {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-        </header>
+        </>
     )
 }
 

@@ -27,7 +27,7 @@ img {
     object-fit: cover;
 }
 
-header {
+.header {
     background-color: var(--clr-light);
 }
 
