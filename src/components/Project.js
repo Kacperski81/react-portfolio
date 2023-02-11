@@ -1,12 +1,11 @@
-import { getProject } from "../data/data";
 
 
-function Project({image}) {
-    const project = getProject(1);
+
+function Project() {
+
     return (
         <>
-            <h1>{project.title}</h1>
-            <img src={image} />
+            <h1>Project</h1>
         </>
     )
 }
