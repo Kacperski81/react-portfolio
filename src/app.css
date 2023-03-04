@@ -4,24 +4,28 @@
     box-sizing: border-box;
 }
 
-body {
-    max-width: 1280px;
-    font-size: 1rem;
-    background: "#ffffff";
-}
+
 
 :root {
     --clr-background: #fff;
-    --clr-light: #f0f3bd;
+    --clr-light: #eef0f2;
     /* --clr-light: #d8c99b;   */
     --clr-dark: #273e47;
     --clr-accent: #02c39a;
     --clr-font: #000;
-
+    
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
     0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: 1280px;
+    height: 100vh;
+    font-size: 1rem;
+    background: #eef0f2;
+    margin: 0 auto;
+}
 img {
     max-width: 100%;
     object-fit: cover;
@@ -29,6 +33,15 @@ img {
 
 .header {
     background-color: var(--clr-light);
+}
+
+.nav {
+    background-color: var(--clr-light);
+}
+
+.nav-hamburger {
+    text-align: center;
+    padding: .2em;
 }
 
 .brand {
