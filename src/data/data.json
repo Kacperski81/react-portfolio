@@ -1,5 +1,19 @@
 [
     {
+        "id": "spaceJunkie",
+        "title": "Space Junkie",
+        "linkToDeployed": "https://space-junkie.netlify.app/",
+        "linkToGitHub": "https://github.com/ikamen/space-junkie",
+        "image": "../images/spaceJunkie.png"
+    },
+    {
+        "id": "tasty-byte",
+        "title": "Tasty Byte",
+        "linkToDeployed": "https://ad660.github.io/TastyByte",
+        "linkToGitHub": "https://github.com/ad660/TastyByte",
+        "image": "../images/tastyByte.png"
+    },
+    {
         "id": "password-generator",
         "title": "Password Generator",
         "linkToDeployed": "https://kacperski81.github.io/Password-Generator/",
@@ -26,19 +40,5 @@
         "linkToDeployed": "https://kacperski81.github.io/Weather-Dashboard/",
         "linkToGitHub": "https://github.com/Kacperski81/Weather-Dashboard",
         "image": "../images/weather-dashboard.png"
-    },
-    {
-        "id": "dumm1",
-        "title": "Dummy Title 1",
-        "linkToDeployed": "Dummy link to deployed 1",
-        "linkToGitHub": "Dummy link to GitHub 1",
-        "image": ""
-    },
-    {
-        "id": "dummy2",
-        "title": "Dummy Title 2",
-        "linkToDeployed": "Dummy link to deployed 2",
-        "linkToGitHub": "Dummy link to GitHub 2",
-        "image": ""
     }
 ]

@@ -1,14 +1,21 @@
 import projectData from "../data/data"
 import Project from "./Project";
+import styled from "styled-components";
 
+const ProjectsWrapper = styled.div`
+    @media(min-width: 768px);
+    display: flex;
+    flex-wrap: wrap;
+    
+`
 
 function Projects() {
     return (
-        <>
+        <ProjectsWrapper>
             {projectData.map(project => (
                 <Project key={project.id} projectData={project}/>
             ))}          
-        </>
+        </ProjectsWrapper>
     )
 }
 

@@ -21,7 +21,7 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     max-width: 1280px;
-    height: 100vh;
+    /* height: 100vh; */
     font-size: 1rem;
     background: #eef0f2;
     margin: 0 auto;
@@ -37,12 +37,22 @@ img {
 
 .nav {
     background-color: var(--clr-light);
+    box-shadow: var(--bs);
+    margin-bottom: .5em;
+    /* border: 1px solid; */
+    display: flex;
+
 }
 
 .nav-hamburger {
     text-align: center;
     padding: .2em;
+    margin-top: .4rem;
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: flex-end;
 }
+
 
 .brand {
     background-color: var(--clr-dark);
@@ -62,6 +72,10 @@ a {
     text-decoration: none;
 }
 
+.active-link {
+    text-decoration: underline;
+}
+
 .projectCard {
     background-color: var(--clr-light);
     color: var(--clr-dark);
@@ -73,5 +87,11 @@ footer p {
     color: var(--clr-dark);
     text-align: center;
     padding: .8rem;
-  }
+}
+
+@media (max-width: 768px) {
+    .nav-hamburger {
+        justify-content: center;
+    }
+}
 

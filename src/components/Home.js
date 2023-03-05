@@ -1,29 +1,45 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-    // border: 1px solid;
     width: 95%;
     margin: 0 auto;
     background-color: #eef0f2;
+
     `
 
 const Intro = styled.div`
     // border: 1px solid;
+    position: relative;
+    @media (min-width: 600px) {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
 `
 
 const Title = styled.h2`
     font-size: 1.80rem;
     text-align: center;
-    margin-top: .3em;
-    padding: .2em;
+    margin-top: .1em;
+    padding: .1em;
     // background-color: #273e47;
     background-color: eef0f2;
     color: #011638;
     // box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-    //             0.125em 0.125em 0.25em rgba(0,0,0,.15);
+        //    0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    
+    @media(min-width: 600px) {
+        align-self: end;
+    }
 `
 
 const Subtitle = styled.p`
+    // display: inline-block;
     background-color: #011638;
     color: #f8f8f8;
     text-align: center;
@@ -31,10 +47,19 @@ const Subtitle = styled.p`
     0.125em 0.125em 0.25em rgba(0,0,0,.15);
     font-size: 1.25rem;
     padding: .2em;
+    
+    @media(min-width: 600px) {
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+    }
 `
 
 const Image = styled.img`
-    width: 90%;
     margin: 0 auto;
     display: block;
     max-height: 300px;
@@ -45,6 +70,13 @@ const Image = styled.img`
 
     @media (min-width: 450px) {
         object-fit: contain;
+    }
+
+    @media (min-width: 600px) {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
     }
 
     @media (min-width: 768px) {
@@ -68,7 +100,7 @@ function Home() {
     return (
         <Wrapper>
             <Intro>
-                <Title>Hi I'm Marcin Kacperski</Title>
+                <Title>Hi I'm <strong>Marcin Kacperski</strong></Title>
                 <Subtitle>front-end developer</Subtitle>
                 <Image src="../images/me2.png" />
             </Intro>

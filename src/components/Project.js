@@ -1,48 +1,48 @@
+import styled from "styled-components";
 
-const styles = {
-    container: {
-        display: "flex",
-        flexDirection: "column",
-        padding: "0.2rem",
-        margin: "1.4rem .7rem",
-        borderRadius: "5px",
-        // background: "#ffffff",
-        boxShadow: "0.25rem 0.25rem 0.50rem #f0f3bd, -0.25rem -0.25rem 0.50rem #f0f3bd",
-        // border: "1px solid"
-    },
-    containerItemTitle: {
-        flex: "1",
-        fontSize: "1.5rem",
-        textAlign: "center",
-    },
-    containerItemImage: {
-        flex: "1",
-        border: "1px solid #f0f0f0",
-        marginBottom: ".8rem",
-        // boxShadow: "1px 1px 1px #f0f0f0, -1px -1px 1px #f0f0f0",
-    },
-    containerItem: {
-        flex: "1",
-        fontSize: "1rem",
-        padding: ".1rem .5rem",
-        marginBottom: ".1rem",
-        // border: "1px solid",
-        textAlign: "center"
-    },
-    link: {
-        textDecoration: "none",
+const ProjectCard = styled.div`
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+                0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    
+    :not(:last-child) {
+        margin-bottom: .6em;
     }
-}
+`
+
+const CardTitle = styled.h3`
+    flex: 1;
+    font-size: 1.5rem;
+    text-align: center;
+`
+
+const CardImage = styled.img`
+    flex: 1;
+    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+                0.125em 0.125em 0.25em rgba(0,0,0,.15);
+`
+
+const UrlLink = styled.a`
+    text-decoration: none;
+`
+
+const GitHubLink = styled(UrlLink)`
+
+`
 
 function Project(props) {
     
     return (
-        <div style={styles.container} className="projectCard">
-            <h3 style={styles.containerItemTitle}>{props.projectData.title}</h3>
-            <img style={styles.containerItemImage} src={props.projectData.image} />
-            <p><a style={styles.link} href={props.projectData.linkToDeployed} target="_blank">Click here</a> and go to the deployed version.</p> 
-            <p><a style={styles.link} href={props.projectData.linkToGitHub} target="_blank">Click here</a> and go to the GitHub repository.</p>
-        </div>
+        <ProjectCard>
+            <CardTitle>{props.projectData.title}</CardTitle>
+            <CardImage src={props.projectData.image} />
+            <UrlLink href={props.projectData.linkToDeployed} target="_blank">WWW</UrlLink> 
+            <GitHubLink href={props.projectData.linkToGitHub} target="_blank">GitHub</GitHubLink>
+        </ProjectCard>
     )
 }
 
