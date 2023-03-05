@@ -113,7 +113,24 @@ function Home() {
                 collaborative teams, going above and beyond job requirements as a true team player to ensure the
                 completion of projects and assigned tasks in line with schedules.
             </Paragraph>
+            <div class="what-i-do">
+                <h1>What I do</h1>
+                <div class="column">
+                    <h2>Front-end Development</h2>
+                    <p>I have experience building responsive websites using HTML, CSS, and JavaScript, and I have completed both the Scrimba Front-End Path and the edX Skills for Life bootcamp in front-end development. I am proficient with popular front-end frameworks such as Bootstrap and React, and I am constantly learning and improving my skills.</p>
+                </div>
+                <div class="column">
+                    <h2>React Development</h2>
+                    <p>I am familiar with React and have completed projects using React Hooks and React Router 6. I am committed to learning more about this powerful front-end framework and staying up-to-date with the latest trends and best practices.</p>
+                </div>
+                <div class="column">
+                    <h2>Node.js Development</h2>
+                    <p>I am currently learning Node.js and working on building my skills in server-side development. I am excited to explore the possibilities of building full-stack web applications with Node.js and integrating it with front-end technologies.</p>
+                </div>
+            </div>
+
         </Wrapper>
+
     )
 }
 
