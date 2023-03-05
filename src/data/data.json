@@ -1,0 +1,44 @@
+[
+    {
+        "id": "spaceJunkie",
+        "title": "Space Junkie",
+        "linkToDeployed": "https://space-junkie.netlify.app/",
+        "linkToGitHub": "https://github.com/ikamen/space-junkie",
+        "image": "../images/spaceJunkie.png"
+    },
+    {
+        "id": "tasty-byte",
+        "title": "Tasty Byte",
+        "linkToDeployed": "https://ad660.github.io/TastyByte",
+        "linkToGitHub": "https://github.com/ad660/TastyByte",
+        "image": "../images/tastyByte.png"
+    },
+    {
+        "id": "password-generator",
+        "title": "Password Generator",
+        "linkToDeployed": "https://kacperski81.github.io/Password-Generator/",
+        "linkToGitHub": "https://github.com/Kacperski81/Password-Generator",
+        "image": "../images/passwordGenerator.png"
+    },
+    {
+        "id": "code-quiz",
+        "title": "Code Quiz",
+        "linkToDeployed": "https://kacperski81.github.io/Code-Quiz/",
+        "linkToGitHub": "https://github.com/Kacperski81/Code-Quiz",
+        "image": "../images/code-quiz.png"
+    },
+    {
+        "id": "calendar-application",
+        "title": "Calendar Application",
+        "linkToDeployed": "https://kacperski81.github.io/Calendar-Application/",
+        "linkToGitHub": "https://github.com/Kacperski81/Calendar-Application",
+        "image": "../images/calendar-app.png"
+    },
+    {
+        "id": "weather-dashboard",
+        "title": "Weather Dashboard",
+        "linkToDeployed": "https://kacperski81.github.io/Weather-Dashboard/",
+        "linkToGitHub": "https://github.com/Kacperski81/Weather-Dashboard",
+        "image": "../images/weather-dashboard.png"
+    }
+]

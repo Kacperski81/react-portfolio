@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-background: #fff;
+    --clr-light: #eef0f2;
+    /* --clr-light: #d8c99b;   */
+    --clr-dark: #273e47;
+    --clr-accent: #02c39a;
+    --clr-font: #000;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+    0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+html {
+    height: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+body {
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: 1280px;
+    font-size: 1.125rem;
+    background: #eef0f2;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 90%;
+    object-fit: cover;
+}
+
+strong {
+    font-weight: var(--fw-bold);
+}
+
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
+
+.header {
+    background-color: var(--clr-light);
+}
+
+.nav {
+    background-color: var(--clr-light);
+    box-shadow: var(--bs);
+    margin-bottom: .5em;
+    font-size: 1.25rem;
+    display: flex;
+    width: 100%;
+    /* height: clamp(4em, 6vh, 6em); */
+}
+
+.nav-hamburger {
+    text-align: center;
+    padding: .2em;
+    margin-top: .4rem;
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: flex-end;
+}
+
+
+.brand {
+    background-color: var(--clr-dark);
+    color: var(--clr-light) !important;
+    padding: .4rem 1.2rem;
+    box-shadow: var(--bs);
+    text-decoration: none;
+}
+
+a {
+    color: var(--clr-dark);
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--clr-dark);
+}
+
+.brand a {
+    color: var(--clr-lignt) !important;
+    text-decoration: none;
+}
+
+.active-link {
+    text-decoration: underline;
+    color: var(--clr-dark);
+}
+
+.projectCard {
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+}
+
+footer p {
+    margin-bottom: 0;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    text-align: center;
+    padding: .8rem;
+}
+
+@media (max-width: 600px) {
+    .nav-hamburger {
+        justify-content: center;
+    }
+}
+
