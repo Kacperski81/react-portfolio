@@ -68,7 +68,6 @@ h3 { font-size: var(--fs-h3) }
     box-shadow: var(--bs);
     margin-bottom: .5em;
     font-size: 1.25rem;
-    border: 1px solid;
     display: flex;
     width: 100%;
     /* height: clamp(4em, 6vh, 6em); */

@@ -2,14 +2,33 @@ import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalSyle = createGlobalStyle`
     :root {
+        --ff-primary: 'Source Sans Pro', sans-serif;
+        --ff-secondary: 'Source Code Pro', monospace;
+    
+        --fw-reg: 300;
+        --fw-med: 600;
+        --fw-bold: 900;
+    
+        --clr-background: #eef0f2;
+        --clr-light: #eef0f2;
+        --clr-dark: #011638;
+        --clr-accent: #02c39a;
+        --clr-font: #f8f8f8;
+    
+        --fs-h1: 2.5rem;
+        --fs-h2: 2.125rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.2rem;
         
+        --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+              0.125em 0.125em 0.25em rgba(0,0,0,.15);
     }
 `
 
 const Wrapper = styled.div`
     width: 95%;
     margin: 0 auto;
-    background-color: #eef0f2;
+    background-color: var(--clr-background);
 `
 
 const Intro = styled.div`
@@ -21,40 +40,56 @@ const Intro = styled.div`
         margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas:
-            "img title"
-            "img subtitle";
+        "img title"
+        "img subtitle";
         grid-template-columns: min-content max-content;
+    }
+`
+const Image = styled.img`
+    margin: 0 auto;
+    display: block;
+    // width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    box-shadow: var(--bs);
+    margin-bottom: .5em;
+
+    @media(min-width: 768px) {
+        max-height: 600px;
+    }
+
+    @media(min-width: 1024px) {
+        grid-area: img;
+        min-width: 300px;
+        position: relative;
+        z-index: 2;
     }
 `
 
 const Title = styled.h2`
-    font-size: 2.5rem;
+    font-size: var(--fs-h1);
     text-align: center;
     margin-top: .1em;
     padding: .1em;
-    // background-color: #273e47;
-    background-color: eef0f2;
-    color: #011638;
-    // box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-        //    0.125em 0.125em 0.25em rgba(0,0,0,.15);
-    
-    @media(min-width: 600px) {
+    color: var(--clr-dark);
+
+    @media(min-width: 1024px) {
         align-self: end;
-        font-size: 2.5rem;
     }
 `
 
 const Subtitle = styled.p`
-    // display: inline-block;
-    background-color: #011638;
-    color: #f8f8f8;
+    width: 80%;
+    font-weight: var(--fw-med);
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
     text-align: center;
-    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-    0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    box-shadow: var(--bs);
     font-size: 1.5rem;
-    padding: .2em;
-    
-    @media(min-width: 600px) {
+    padding: .2em .5em;
+    margin: 0 auto .5em;
+
+    @media (min-width: 1024px) {
         align-self: start;
         grid-column: -1 / 1;
         grid-row: 2;
@@ -62,47 +97,16 @@ const Subtitle = styled.p`
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
-        font-size: 2rem;
     }
 `
 
-const Image = styled.img`
-    border: 1px solid;
-    margin: 0 auto;
-    display: block;
-    max-height: 300px;
-    object-fit: cover;
-    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-                0.125em 0.125em 0.25em rgba(0,0,0,.15);
-    margin-bottom: .5em;
-
-    @media (min-width: 450px) {
-        object-fit: cover;
-        min-height: 500px;
-        min-width: 500px;
-    }
-
-    @media (min-width: 600px) {
-        grid-area: img;
-        // min-width: 250px;
-        position: relative;
-        z-index: 2;
-    }
-
-    @media (min-width: 768px) {
-        background-color: #273e47;
-    }
-`
 
 const Paragraph = styled.p`
-    // border: 1px solid;
-    font-size: 1.125rem;
+    font-size: var(--fs-body);
     line-height: 1.35;
     padding: .5em;
-    background-color: #273e47;
-    color: #eef0f2;
-    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-                0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: justify;
 
     @media (min-width: 600px) {
@@ -111,23 +115,38 @@ const Paragraph = styled.p`
 `
 
 const WhatIdoWrapper = styled.div`
+    max-width: 800px;
+    margin: 0 auto;
+`
+
+const WhatIDo = styled.div`
+    box-shadow: var(--bs);
 
 `
 
 const WhatIdoTitle = styled(Title) `
     margin-top: .5em;
-    font-weight: 600;
-    color: #011638;
-    font-size: var(--font-size);
+    font-weight: var(--fw-med);
+    color: var(--clr-dark);
+    font-size: var(--fs-h2);
     ::after {
         content: '';
         display: block;
         width: 2em;
         height: 1px;
         margin: .3em auto .3em;
-        background: #011638;
+        background: var(--clr-dark);
         opacity: 0.25;
     }
+`
+
+
+const H3 = styled.h3`
+    text-align: center;
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-med);
+    padding: .3em;
+    margin: 0;
 `
 
 function Home() {
@@ -140,26 +159,26 @@ function Home() {
                 <Subtitle>front-end developer</Subtitle>
                 <Image src="../images/me2.png" />
             </Intro>
+            <WhatIdoTitle>What I do</WhatIdoTitle>
             <WhatIdoWrapper>
-                <WhatIdoTitle>What I do</WhatIdoTitle>
-                <div class="column">
-                    <h3>Front-end Development</h3>
+                <WhatIDo>
+                    <H3>Front-end Development</H3>
                     <Paragraph>
                         I have experience building responsive websites using HTML, CSS, and JavaScript, and I have completed both the Scrimba Front-End Path and the edX Skills for Life bootcamp in front-end development. I am proficient with popular front-end frameworks such as Bootstrap and React, and I am constantly learning and improving my skills.
                     </Paragraph>
-                </div>
-                <div class="column">
-                    <h3>React Development</h3>
+                </WhatIDo>
+                <WhatIDo>
+                    <H3>React Development</H3>
                     <Paragraph>
                         I am familiar with React and have completed projects using React Hooks and React Router 6. I am committed to learning more about this powerful front-end framework and staying up-to-date with the latest trends and best practices.
                     </Paragraph>
-                </div>
-                <div class="column">
-                    <h3>Node.js Development</h3>
+                </WhatIDo>
+                <WhatIDo>
+                    <H3>Node.js Development</H3>
                     <Paragraph>
                         I have basic knowledge of Node.js from completing the edX Skills for Life bootcamp in front-end development. I am excited to continue building my skills in server-side development and explore the possibilities of building full-stack web applications with Node.js and integrating it with front-end technologies.
                     </Paragraph>
-                </div>
+                </WhatIDo>
             </WhatIdoWrapper>
             {/* <Paragraph>High-energy and innovative front-end developer looking to leverage training to design and
                 deliver fully functional, visually appealing, and responsive websites with full compatibility across PC,
