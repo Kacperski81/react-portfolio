@@ -10,7 +10,7 @@ const FooterWrapper = styled.footer`
 function Footer() {
     return (
         <FooterWrapper>
-            <p>&copy;Marcin Kacperski</p>
+            <p>&copy;kacperski81@gmail.com</p>
         </FooterWrapper>
     )
 }

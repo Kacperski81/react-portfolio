@@ -96,6 +96,10 @@ a {
     cursor: pointer;
 }
 
+a:hover {
+    color: var(--clr-dark);
+}
+
 .brand a {
     color: var(--clr-lignt) !important;
     text-decoration: none;
@@ -103,6 +107,7 @@ a {
 
 .active-link {
     text-decoration: underline;
+    color: var(--clr-dark);
 }
 
 .projectCard {
@@ -118,7 +123,7 @@ footer p {
     padding: .8rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .nav-hamburger {
         justify-content: center;
     }

@@ -24,9 +24,9 @@ function Header() {
                         <Nav.Item>
                             <NavLink style={styles.navLink} className={({isActive}) => isActive ? 'active-link' : null } to="/projects">Projects</NavLink>
                         </Nav.Item>
-                        <Nav.Item>
+                        {/* <Nav.Item>
                             <NavLink style={styles.navLink} className={({isActive}) => isActive ? 'active-link' : null } to="/contact">Contact</NavLink>
-                        </Nav.Item>
+                        </Nav.Item> */}
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

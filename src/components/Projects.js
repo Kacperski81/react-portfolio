@@ -3,9 +3,12 @@ import Project from "./Project";
 import styled from "styled-components";
 
 const ProjectsWrapper = styled.div`
-    @media(min-width: 768px);
-    display: flex;
-    flex-wrap: wrap;
+    @media(min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5em;
+        margin: 0 auto;
+    }
     
 `
 
